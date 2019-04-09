@@ -28,11 +28,18 @@
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <h2>Get <br>Connected</h2>
-        <p><strong>Wifi:</strong> Wifi Network</p>
-        <p><strong>Password:</strong> Wifi Password</p>
+        <p><strong>Wifi:</strong> @Memorial-Guest</p>
         <hr>
 
-
+        <h2>Download<br> & Install</h2>
+        <ol class="downloads">
+          <li>Learner files (zip file): <a href="https://github.com/lesleychard/klc-generative-art-with-processing/archive/master.zip">https://bit.ly/2Vycb8T</a>
+            <ul>
+              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+              <li>open <em>slides-en.html</em> in the browser to view the slides</li>
+            </ul>
+          </li>
+        </ol>
     </div>
 
       <footer>
@@ -50,9 +57,10 @@
         with Processing</span>
       </h1>
 
+      <img class="instructor" src="framework/img/lesleychard.jpg" alt="Lesley Chard">
+      <h2><span class="cursive">with</span> Lesley Chard</h2>
       <ul>
-        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
-        <li><a href="https://twitter.com/search?q=%23kidslearningcode&src=typd">#kidslearningcode</a></li>
+        <li><a href="mailto:lesleychard@canadalearningcode.ca">lesleychard@canadalearningcode.ca</a></li>
       </ul>
 <!--
       <div class="sponsor">
@@ -106,7 +114,7 @@
 
         Break
 
-        Interactive Art <!--Insert activity name here -->
+        Code an Easter Basket <!--Insert activity name here -->
 
       </script>
     </section>
@@ -159,7 +167,7 @@
     <section class="slide centered" data-markdown>
       <script type="text/template">
         #Today's Project
-        <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe>
+        <iframe src="https://www.openprocessing.org/sketch/696801/embed/" width="500" height="550"></iframe>
 
       </script>
     </section>
@@ -425,6 +433,7 @@
 
       ``` processing
       void setup() { //This is a comment
+        /* This is also a comment! */
         size(600,600); //Setup only happens one time
       }
 
@@ -694,6 +703,33 @@
     </section>
 
 <!--Slide 41-->
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      #Add an image
+
+      You can also add your own images!
+
+      1. Upload the file
+      1. Preload with a special comment
+      1. Load the image.
+      1. Use the image!
+
+      ```
+      /* Images have to be "preloaded" with the comment below: */
+      /* @pjs preload="myImage.png"; */
+
+      PImage myImage; // special variable PImage is like int but for image files
+
+      void setup() {
+        myImage = loadImage("myImage.png");
+        background(myImage); // set the image as the background
+        image(myImage, 0, 0, 500, 500); // OR you can place the image inside your Sketch
+      }
+      ```
+    </script>
+  </section>
+
+<!--Slide 42-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         #Keep Saving!
@@ -701,17 +737,19 @@
       </script>
     </section>
 
-<!--Slide 42-->
-    <section class="slide title" data-markdown>
+<!--Slide 43-->
+    <section class="slide centered" data-markdown>
       <script type="text/template">
         #Final Project
+        <iframe src="https://www.openprocessing.org/sketch/696801/embed/" width="500" height="550"></iframe>
+
       </script>
     </section>
 
-<!--Slide 43-->
+<!--Slide 44-->
   <section class="slide" data-markdown>
     <script type="text/template">
-      #Emoji Art
+      #Bonus: Emoji Art
 
       Example:
 
@@ -724,7 +762,7 @@
     </script>
   </section>
 
-<!--Slide 44-->
+<!--Slide 45-->
 <section class="slide" data-markdown>
   <script type="text/template">
     #Emoji Art<!--insert activity title here-->
@@ -741,14 +779,14 @@
   </script>
 </section>
 
-<!--Slide 45-->
+<!--Slide 46-->
     <section class="slide title" data-markdown>
       <script type="text/template">
         #DEMOS
       </script>
     </section>
 
-<!--Slide 46-->
+<!--Slide 47-->
     <main>
 
       <section class="slide" data-toc data-markdown>
@@ -764,7 +802,7 @@
         </script>
       </section>
 
-<!--Slide 47-->
+<!--Slide 48-->
     <!-- Last slide -->
     <section class="slide last">
       <h1>Thank you!</h1>
@@ -772,9 +810,10 @@
         <span>Generative Art <br>with Processing</span>
       </h2>
 
+      <img class="instructor" src="framework/img/lesleychard.jpg" alt="Lesley Chard">
+      <h2><span class="cursive">with</span> Lesley Chard</h2>
       <ul>
-        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
-        <li><a href="https://twitter.com/search?q=%23kidslearningcode&src=typd">#kidslearningcode</a></li>
+        <li><a href="mailto:lesleychard@canadalearningcode.ca">lesleychard@canadalearningcode.ca</a></li>
       </ul>
 
       <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
